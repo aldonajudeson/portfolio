@@ -40,3 +40,9 @@ svg text {
     text-shadow: 3px 4px 7px rgba(21, 6, 122, 0.8);
 
 }
+*{
+    scroll-behavior: smooth;
+}
+section{
+    margin: 10px;
+}
