@@ -46,3 +46,11 @@ svg text {
 section{
     margin: 10px;
 }
+.portfolio{
+	font-size: x-large;
+	display: inline;
+	background-color: #83a9e7;
+	border-radius: 87px; 
+	border: 2px solid #365FA0;
+	padding: 4px;
+}
