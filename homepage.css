@@ -7,7 +7,7 @@ svg {
 svg text {
 	animation: stroke 5s infinite alternate;
 	stroke-width: 2;
-	stroke: #365FA0;
+	stroke: #001b47;
 	font-size: 40px;
 }
 @keyframes stroke {
@@ -23,13 +23,12 @@ svg text {
 	}
 }
 
-.wrapper{background-color: #ffffff;
+.wrapper{background-color: #b7c6f2;
     
-
 }
 .mynavbar{
     /* box-shadow: 8px 8px 11px 0px rgba(26, 24, 119, 0.91); */
-	background-color: #ffffff;
+	background-color: #b7c6f2;
 }
 
 .mylink{
@@ -53,4 +52,45 @@ section{
 	border-radius: 87px; 
 	border: 2px solid #365FA0;
 	padding: 4px;
+}
+#home{
+	height: 100vh;
+	padding-top: 100px;
+	background-image: conic-gradient(to right #cbe7dd 25%, #372f48 25% 50%, #372f48 50% 75%, #e3ac72 75% 100%);
+	background-color: #b7c6f2;
+}
+#aboutme{
+	height: 100vh;
+	padding-top: 100px;
+	background-color: #b7c6f2;
+}
+#education{
+	height: 100vh;
+	padding-top: 100px;
+	background-color: #b7c6f2;
+}
+#skills{
+	height: 100vh;
+	padding-top: 100px;
+	background-color: #b7c6f2;
+}
+#projects{
+	height: 100vh;
+	padding-top: 100px;
+	background-color: #b7c6f2;
+}
+#contact{
+	height: 100vh;
+	padding-top: 100px;
+	background-color: #b7c6f2;
+}
+nav{
+	position: fixed;
+  	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+body{
+	padding-top: 70px;
 }
