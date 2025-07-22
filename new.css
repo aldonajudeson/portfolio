@@ -4,6 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+body{
+    background: linear-gradient(to right, #5b2735, #3c1924);
+}
 
 .navlinks ul{
     display: flex;
@@ -18,7 +21,7 @@
 }
 .navbar{
     border-radius: 25px;
-    background-color: #A8D5E3;
+    background-color: #f0dac1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,35 +41,48 @@
 
 }
 .navlinks ul li a:hover{
-    background-color: #517c89;
+    background-color: #66373690;
     color: white;
     
 }
 .hero{
     gap: 10px;
-    background-color: #F2F0EA;
+   background: linear-gradient(to right, #5b2735, #3c1924);
     height: 100vh;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 80px 350px auto;
+    padding: 0  40px
 }
-.heros{
-    background-color: bisque;
-}
+
 .heading{
     padding: 30px 15px;
     grid-area: 2/1/3/2;
-    background-color: #FF78AC;
-    font-size: 60px;
+    background-color: #c592729f;
+    font-size: 80px;
+    border-radius: 50px;
 }
 .intro{
+    margin-top: 10px;
     grid-area: 3/1/4/2;
-    background-color: rgb(23, 101, 20);
+    /* background-color: #340200; */
+    border-radius: 20px;
+    padding: 10px;
 }
 .photo{
-    background-color: cyan;
     grid-area: 2/2/4/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.my_photo{
+    box-shadow: 10px 10px 0px #5b2735;
+    width: 500px;
+    border-radius: 350px;
+}
+
+
 .hero .heading h4{
     font-size: 40px;
     display: inline;
@@ -81,14 +97,131 @@
 }
 .hero .heading h1{
     font-family: 'Britney', cursive;
-    color: white;
+    color: rgb(71, 36, 36);
     display: inline;
     
 }
+.hero .intro a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    padding: 11px 22px;
+    border-radius: 20px;
+    transition: background-color 0.5s ease,color 0.2s ease;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    background-color: #340200;
+}
 
-
-
+.hero .intro a:hover{
+    background-color: #c56e6b90;
+    color: #000000;
+}
 
 .about{
     height: 90vh;
+    
+}
+.about_me{
+    margin: 10px 0;
+    background-color: #c592729f;
+    border-radius: 50px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.mycards1{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #5b2735;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    margin: 20px;
+    background: #340200;
+}
+.mycards2{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #5b2735;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    margin: 20px;
+    background: #340200;
+}
+.mycards3{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #5b2735;
+    overflow: hidden;
+    font-family: 'Quicksand', sans-serif;
+    margin: 20px;
+    background: #340200;
+}
+
+
+.about .about_me h1{
+    padding: 20px;
+    text-align: center;
+}
+.about .cards .mycards1 img{
+    width: 200px;
+    margin: 10px 0 5px;
+}
+.about .cards .mycards1 h1{
+    color: white;
+    margin: 0 50px;
+    border: #f73a6c solid 3px;
+    padding: 0 15px
+}
+.card-img1{
+    border: #b16a7d solid 3px;
+    margin: 15px 50px;
+}
+.card-content1{
+    color: white;
+    border: #b16a7d solid 2px;
+    margin: 10px 50px;
+}
+.about .cards .mycards2 img{
+    width: 200px;
+    margin: 10px 0 5px;
+}
+.about .cards .mycards2 h1{
+    color: white;
+    margin: 0 50px;
+    border: #f73a6c solid 3px;
+    padding: 0 15px
+}
+.card-img2{
+    border: #b16a7d solid 3px;
+    margin: 15px 50px;
+}
+.card-content2{
+    color: white;
+    border: #b16a7d solid 2px;
+    margin: 10px 50px;
+}
+.about .cards .mycards3 img{
+    width: 200px;
+    margin: 10px 0 5px;
+}
+.about .cards .mycards3 h1{
+    color: white;
+    margin: 0 50px;
+    border: #f73a6c solid 3px;
+    padding: 0 15px
+}
+.card-img3{
+    border: #b16a7d solid 3px;
+    margin: 15px 50px;
+}
+.card-content3{
+    color: white;
+    border: #b16a7d solid 2px;
+    margin: 10px 50px;
 }
