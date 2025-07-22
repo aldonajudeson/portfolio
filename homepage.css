@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
 
-svg {
+.animated_text {
 	font-family: "Nova Cut", sans-serif;
 	width: 200px; height: 50px;
 }
-svg text {
+.animated_text text {
 	animation: stroke 5s infinite alternate;
 	stroke-width: 2;
 	stroke: #001b47;
@@ -12,77 +12,169 @@ svg text {
 }
 @keyframes stroke {
 	0%   {
-		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		fill: rgba(204, 72, 178, 0); stroke: rgb(147, 21, 94);
 		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
 	}
-	70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
-	80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+	70%  {fill: rgba(204, 72, 178, 0); stroke: rgb(147, 21, 94); }
+	80%  {fill: rgba(204, 72, 178, 0); stroke: rgb(147, 21, 94); stroke-width: 3; }
 	100% {
-		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		fill: rgba(204, 72, 178, 1); stroke: rgb(147, 21, 95);
 		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
 	}
 }
 
-.wrapper{background-color: #b7c6f2;
+.wrapper{background-color: #ffe1fc;
     
 }
 .mynavbar{
     /* box-shadow: 8px 8px 11px 0px rgba(26, 24, 119, 0.91); */
-	background-color: #b7c6f2;
+	background-color: #d682c1;
 }
 
 .mylink{
     margin-left: 150px;
+	padding: 5px;
 }
 .mylink:hover{
-    /* text-decoration: underline red 3px; */
-    text-shadow: 3px 4px 7px rgba(21, 6, 122, 0.8);
+	padding: 5px;
+	border-radius: 100%;
+	background-color: rgba(231, 112, 235, 0.458);
 
 }
+
+.card {
+	margin-left: 750px;
+	width: 200px;
+	height: 254px;
+	border-radius: 20px;
+	padding: 5px;
+	box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+	background-image: linear-gradient(144deg,#AF40FF, #590e76 50%,#dc00f9);
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(#fff2, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.container .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container .glass svg {
+  font-size: 2.5em;
+  fill: #fff;
+}
+
+
 *{
     scroll-behavior: smooth;
+	color: white
 }
+
+.myglass{
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
 section{
     margin: 10px;
 }
 .portfolio{
+	color: white;
 	font-size: x-large;
-	display: inline;
-	background-color: #83a9e7;
+	display: flex;
+	justify-content: center;
+	background-color: #69306e;
 	border-radius: 87px; 
-	border: 2px solid #365FA0;
+	border: 2px solid #ac3a99;
 	padding: 4px;
+	text-align: center;
 }
 #home{
-	height: 100vh;
-	padding-top: 100px;
+	padding-top: 15px;
 	background-image: conic-gradient(to right #cbe7dd 25%, #372f48 25% 50%, #372f48 50% 75%, #e3ac72 75% 100%);
-	background-color: #b7c6f2;
+	background-color: #d2a5cf;
+}
+.about{
+	background-color: #69306e;
+	padding: 10px;
+	text-align: justify;
+	border-radius: 15px;
 }
 #aboutme{
-	height: 100vh;
 	padding-top: 100px;
-	background-color: #b7c6f2;
+	padding-bottom: 80px;
+	background-color: #d2a5cf;
 }
 #education{
 	height: 100vh;
 	padding-top: 100px;
-	background-color: #b7c6f2;
+	background-color: #d2a5cf;
 }
 #skills{
 	height: 100vh;
 	padding-top: 100px;
-	background-color: #b7c6f2;
+	background-color: #d2a5cf;
 }
 #projects{
-	height: 100vh;
+	/* height: 100vh; */
 	padding-top: 100px;
-	background-color: #b7c6f2;
+	background-color: #d2a5cf;
+	padding-bottom: 60px;
 }
 #contact{
-	height: 100vh;
 	padding-top: 100px;
-	background-color: #b7c6f2;
+	background-color: #d2a5cf;
+	padding-bottom: 50px;
+}
+.mycontact{
+	background-color: rgba(159, 27, 109, 0.5);
+	
+}
+.mycontact a{
+	text-decoration: none;
+	color: white;
+}
+.mycontact_container{
+	display: flex;
+	justify-content: space-evenly;
+	width: 60%;
+	margin: auto;
+	border-radius: 50px;
 }
 nav{
 	position: fixed;
@@ -94,3 +186,198 @@ nav{
 body{
 	padding-top: 70px;
 }
+
+
+.about{
+	margin-left: 10px;
+}
+
+.intro{
+	color: white;
+	margin-left: 700px;
+	margin-top: 50px;
+}
+
+.card1 {
+margin-left: 2px;
+padding: 5px;
+ width: 500px;
+ height: 200px;
+ background: #c869b8;
+ border-radius: 10px;
+ transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ position: absolute;
+ top: 1720px;
+ left: 180px;
+}
+
+
+.card2 {
+padding: 5px;
+ width: 500px;
+ height: 200px;
+ background: #c869b8;
+ border-radius: 10px;
+ transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ position: absolute;
+ top: 0;
+ left: 900px;
+}
+
+.card3 {
+padding: 5px;
+ width: 500px;
+ height: 200px;
+ background: #c869b8;
+ border-radius: 10px;
+ transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ position: absolute;
+	top: 300px;
+	left: 0;
+    
+}
+
+.card4 {
+padding: 5px;
+ width: 500px;
+ height: 200px;
+ background: #c869b8;
+ border-radius: 10px;
+ transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ position: absolute;
+ top: 300px;
+ left: 900px;
+}
+
+
+.shadow1 {
+ box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.shadow2 {
+ box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.shadow3 {
+ box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.shadow4 {
+ box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(190, 190, 190),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+#cssportal-grid {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(5, 1fr);
+	gap: 20px 15px;
+	width: 70%;
+	height: 70%;
+	margin-left: 250px;
+}
+#div1 {
+	grid-area: 1 / 3 / 3 / 4;
+	background-color: rgba(214, 51, 152, 0.5);
+	padding-left:100px;
+}
+#div2 {
+	padding: 10px;
+	grid-area: 1 / 1 / 2 / 3;
+	background-color: rgba(159, 27, 109, 0.5);
+}
+#div3 {
+	padding: 10px;
+	grid-area: 2 / 1 / 3 / 3;
+	background-color: rgba(159, 27, 109, 0.5);
+}
+#div4 {
+	padding: 10px;
+	grid-area: 1 / 4 / 2 / 6;
+	background-color: rgba(159, 27, 109, 0.5);
+}
+#div5 {
+	padding: 10px;
+	grid-area: 2 / 4 / 3 / 6;
+	background-color: rgba(159, 27, 109, 0.5);
+}
+
+#cssportal-grid1 {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(5, 1fr);
+	gap: 13px 12px;
+	width: 70%;
+	height: 70%;
+	margin-left: 250px;
+	
+}
+#mydiv1 {
+	padding-left: 100px;
+	grid-area: 1 / 3 / 3 / 4;
+	background-color: rgba(214, 51, 152, 0.5);
+}
+#mydiv2 {
+	text-align: justify;
+	padding: 10px;
+	grid-area: 1 / 4 / 3 / 6;
+	background-color: rgba(159, 27, 109, 0.5);
+}
+#mydiv3 {
+	text-align: justify;
+	padding: 10px;
+	grid-area: 1 / 1 / 3 / 3;
+	background-color: rgba(159, 27, 109, 0.5);
+}
+
+
+.card{
+	border-radius: 150px;
+}
+
+.about_icon{
+	padding-right: 30px;
+	color: #590e76;
+}
+
+#cssportal-grid2 {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(5, 1fr);
+	gap: 13px 12px;
+	width: 70%;
+	height: 70%;
+	margin-left: 250px;
+}
+#ed-div1 {
+	grid-area: 1 / 1 / 4 / 2;
+	background-color: rgba(235,235,251, 0.5);
+	padding-left: 100px;
+	padding-top: 20px;
+}
+#ed-div2 {
+	grid-area: 1 / 2 / 2 / 4;
+	background-color: rgba(254,251,222, 0.5);
+}
+#ed-div3 {
+	grid-area: 1 / 4 / 2 / 6;
+	background-color: rgba(40,7,49, 0.5);
+}
+#ed-div4 {
+	grid-area: 2 / 2 / 3 / 4;
+	background-color: rgba(54,62,53, 0.5);
+}
+#ed-div5 {
+	grid-area: 2 / 4 / 3 / 6;
+	background-color: rgba(215,89,143, 0.5);
+}
+/* .ed-head{
+	margin-left: 100px;
+} */

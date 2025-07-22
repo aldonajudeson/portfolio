@@ -1,0 +1,4 @@
+font-family: 'Hind', sans-serif;
+font-family: 'Pilcrow Rounded', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Britney', cursive;

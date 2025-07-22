@@ -13,83 +13,218 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Share+Tech&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
     
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-  <div class="container-fluid ">
-    <a class="navbar-brand" href="#">
-        <div class="wrapper">
-	<svg>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="wrapper">
+	<svg class="animated_text">
 		<text x="50%" y="50%" dy=".35em" text-anchor="middle">
-			Portfolio
+			A J
 		</text>
 	</svg>
 </div>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page" href="#home">Home</a>
+        <a class="nav-link" href="#aboutme">About Me</a>
+        <a class="nav-link" href="#education">Education</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+    </a>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ">
         <li class="nav-item mylink">
-          <a class="nav-link" aria-current="page" href="#home">Home</a>
+          <a class="nav-link" aria-current="page" href="#home"></a>
         </li>
         <li class="nav-item mylink">
-          <a class="nav-link" href="#aboutme">About Me</a>
+          <a class="nav-link" href="#aboutme"></a>
         </li>
         <li class="nav-item mylink">
-          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#education"></a>
         </li>
         <li class="nav-item mylink">
-          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#skills"></a>
         </li>
         <li class="nav-item mylink">
-          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#projects"></a>
         </li>
         <li class="nav-item mylink">
-          <a class="nav-link" href="#contact">Contact Me</a>
+          <a class="nav-link" href="#contact"></a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-
+<div class="mycard">
 <section id="home">
-  <p class="portfolio">Homepage</p><br><br>
-  <p>My name is Aldona Judeson. This is my homepage. This is where you will find what my interests are, what i studied, the skill i am building and the skills that i have acquired and finally the projects that i have done.</p>
+  <div class="container">
+    <a href="#aboutme" class="text-decoration-none">
+  <div data-text="About Me" style="--r:-15;" class="glass">
+    <svg viewBox="0 0 496 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+      <!-- <path
+        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+      ></path> -->
+    </svg>
+    <i class="fa-regular fa-user about_icon" ></i>
+  </div>
+  </a>
+
+
+  <a href="#education" class="text-decoration-none">
+  <div data-text="Education" style="--r:-5;" class="glass">
+    <svg viewBox="0 0 640 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+      <!-- <path
+        d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+      ></path> -->
+    </svg>
+    <img src="" alt="">
+  </div>
+  </a>
+
+
+  <a href="#skills" class="text-decoration-none">
+  <div data-text="Skills" style="--r:5;" class="glass">
+    <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+      <!-- <path
+        d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
+      ></path> -->
+    </svg>
+    <img src="" alt="">
+  </div>
+  </a>
+
+
+  <a href="#projects" class="text-decoration-none">
+  <div data-text="Projects" style="--r:15;" class="glass">
+    <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+      <!-- <path
+        d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
+      ></path> -->
+    </svg>
+    <img src="" alt="">
+  </div>
+  </a>
+
+
+  <a href="#contact" class="text-decoration-none">
+  <div data-text="Contact" style="--r:25;" class="glass">
+    <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+      <!-- <path
+        d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm64 320H64V320c35.3 0 64 28.7 64 64zM64 192V128h64c0 35.3-28.7 64-64 64zM448 384c0-35.3 28.7-64 64-64v64H448zm64-192c-35.3 0-64-28.7-64-64h64v64zM288 160a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
+      ></path> -->
+    </svg>
+    <img src="" alt="">
+  </div>
+  </a>
+</div>
+<p class="intro">Learn more about me by  selecting the cards.</p>
 </section>
+</div>
 
 <section id="aboutme">
   <p class="portfolio">About Me</p><br><br>
-  <p>I am a BCA graduate who is enthusiastic and curious to learn new things. Right now i am studying MERN Full stack course. I try to create new webpages with new designs in my free time. I like to explore the vast area of designing using html and css. This project is made using html and css. I have also studied python and java. </p>
+  <div class="myportfolio">
+  <div class="card">
+    <img class="photo" src="/Portfolio/Aldona.jpg" alt="" width>
+  </div><br><br>
+  <p class="about">I'm a BCA student with a strong interest in web development and designing user-friendly websites. I enjoy working with HTML, CSS, Bootstrap, React, and Firebase to create clean and responsive web applications.
+
+I consider myself a fast learner and someone who's always curious to explore new tools and technologies. I believe in learning through practical projects and constantly improving my skills.
+
+When I'm not coding, I enjoy exploring creative ideas and working on personal projects that help me grow as a developer. I'm always open to learning and taking on new challenges. </p>
+</div>
 </section>
 
 <section id="education">
   <p class="portfolio">Education</p><br><br>
-  <p>I did my schooling at St Aloysius Convent ISC School Palluruthy. Both 10th and 12th was in Aloysius school. Then after my schooling i went to Siena College of Professional Studies to study BCA. I graduated BCA in 2025 and now i am learning MERn stack course in Aesthetix Edu-Tech Vytilla.</p>
+  <div id="cssportal-grid2">
+	<div id="ed-div1">
+    <h1>
+      E <br>D <br>U <br>C <br>A <br>T <br>I <br>O <br>N
+    </h1>
+  </div>
+	<div id="ed-div2">div2</div>
+	<div id="ed-div3">div3</div>
+	<div id="ed-div4">div4</div>
+	<div id="ed-div5">div5</div>
+</div>
+
 </section>
 
 <section id="skills">
   <p class="portfolio">Skills</p><br><br>
-  <ul>
-    <li>HTML, CSS, Bootstrap</li>
-    <li>Python(basics)</li>
-    <li>Java(basics) </li>
-  </ul>
+  <div id="cssportal-grid">
+	<div id="div1">
+    <h1> <br><br>S <br> K <br> I <br> L <br> L <br> S</h1>
+  </div>
+	<div id="div2">
+    <h1>HTML</h1>
+    <p>I have learned HTML and HTML is used for creating the structure of a webpage. In this webpage i have used HTML for the structure.</p>
+  </div>
+	<div id="div3">
+    <h1>CSS</h1>
+    I have also learned CSS and i used CSS for styling this webpage
+  </div>
+	<div id="div4">
+    <h1>BOOTSTRAP</h1>
+    <p>I recently learned the working of bootstrap and it made coding a little easier, we don't have to type everything because it is already there, we just have to select the right thing.</p>
+  </div>
+	<div id="div5">
+    <h1>PYTHON</h1>
+    <p>I learned the basics of python recently and i find python the easiest among all other languages.</p>
+  </div>
+</div>
 </section>
 
 <section id="projects">
   <p class="portfolio">Projects</p><br><br>
-  <p>So i build a veterinary hospital booking system using mern and it was user-friendly. The website was really easy to use because i used simple features like booking and cancelling the appointment without any hassle.</p>
+  <div id="cssportal-grid1">
+	<div id="mydiv1">
+    <h1> <br> P <br>R <br>O <br>J <br>E <br>C <br>T <br>S </h1>
+  </div>
+	<div id="mydiv2">
+    <h1>PAW-PAL</h1><br>
+    <p>Paw-Pal is a web-based veterinary appointment booking system designed to help pet owners easily schedule appointments with veterinarians. The system allows users to register their pets, view available doctors, and book appointments online without any hassle. It aims to simplify pet healthcare management and reduce the dependency on traditional, manual booking systems.</p>
+  </div>
+	<div id="mydiv3">
+    <h1>V-CARE</h1><br>
+    <p>Vcare” is a simple and user-friendly web application designed to help users book appointments with doctors online. The system allows patients to view available doctors, check their specializations, and schedule appointments based on their convenience. The main goal is to eliminate the hassle of offline booking and waiting times, making the healthcare process more efficient.</p>
+  </div>
+</div>
 </section>
 
-<section id="contact">
+<section id="contact" >
   <p class="portfolio">Contact Me </p><br><br>
-  <p>Ph.No:</p><a href="">8714373961</a>
-  <p>Email:</p><a href="">aldonajudeson@gmail.com</a>
+  <div class="mycontact mycontact_container">
+    <div class="phone">
+  <p>Ph.No:</p><br>
+  <a href="">8714373961</a>
+</div>
+  <div class="email">
+  <p>Email:</p><br>
+  <a href="">aldonajudeson@gmail.com</a>
+</div>
+  </div>
 </section>
 </body>
 </html>
+
