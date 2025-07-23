@@ -52,7 +52,7 @@ body{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 80px 350px auto;
-    padding: 0  40px
+    padding: 0  40px;
 }
 
 .heading{
@@ -120,12 +120,14 @@ body{
 
 .about{
     height: 90vh;
+    margin-top: 11vh;
     
 }
 .about_me{
     margin: 10px 0;
-    background-color: #c592729f;
-    border-radius: 50px;
+    font-family: 'Britney', cursive;
+    color: white;
+    font-size: x-large;
 }
 
 .cards{
@@ -134,9 +136,9 @@ body{
 }
 .mycards1{
     width: 300px;
-    height: 400px;
+    height: 450px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px #5b2735;
+    box-shadow: 0 10px 10px #5b2735;
     overflow: hidden;
     font-family: 'Quicksand', sans-serif;
     margin: 20px;
@@ -144,84 +146,392 @@ body{
 }
 .mycards2{
     width: 300px;
-    height: 400px;
+    height: 450px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px #5b2735;
+    box-shadow: 0 10px 10px #5b2735;
     overflow: hidden;
     font-family: 'Quicksand', sans-serif;
-    margin: 20px;
+    margin: 20px 0;
     background: #340200;
 }
 .mycards3{
     width: 300px;
-    height: 400px;
+    height: 450px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px #5b2735;
+    box-shadow: 0 10px 10px #5b2735;
     overflow: hidden;
     font-family: 'Quicksand', sans-serif;
     margin: 20px;
     background: #340200;
 }
 
-
-.about .about_me h1{
-    padding: 20px;
+.about_me h1{
     text-align: center;
 }
-.about .cards .mycards1 img{
-    width: 200px;
-    margin: 10px 0 5px;
+.mycards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
 }
-.about .cards .mycards1 h1{
+
+.card-content1,.card-content2,.card-content3{
+    background-color: #5b2735b9;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+.mycards h1{
     color: white;
-    margin: 0 50px;
-    border: #f73a6c solid 3px;
-    padding: 0 15px
 }
-.card-img1{
-    border: #b16a7d solid 3px;
-    margin: 15px 50px;
-}
-.card-content1{
+.mycards h4{
     color: white;
-    border: #b16a7d solid 2px;
-    margin: 10px 50px;
 }
-.about .cards .mycards2 img{
-    width: 200px;
-    margin: 10px 0 5px;
+
+
+
+
+
+.education{
+    margin-top: 10vh;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+   font-family: 'Quicksand', sans-serif;
+   margin-left: 15px;
+   margin-right: 15px;
 }
-.about .cards .mycards2 h1{
+
+
+.eduitem1{
+    background-color: #340200;
+    border-radius: 15px;
+    grid-area: 1/1/2/4 ;
+}
+.educard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+}
+.educard img{
+    padding: 10px;
+}
+.educardcont{
+    padding: 40px 15px;
     color: white;
-    margin: 0 50px;
-    border: #f73a6c solid 3px;
-    padding: 0 15px
+    background-color: #753533a4;
+    border-radius: 10px;
+    
 }
-.card-img2{
-    border: #b16a7d solid 3px;
-    margin: 15px 50px;
+.eduitem2{
+    background-color: #340200;
+    border-radius: 15px;
+    grid-area: 1/5/2/8;
 }
-.card-content2{
+.eduitem3{
+    background-color: #340200;
+    border-radius: 15px;
+    grid-area:3/1/4/4 ;
+}
+.eduitem4{
+    background-color: #340200;
+    border-radius: 15px;
+    grid-area: 3/5/4/8;
+}
+.eduitem5{
+    background-color: #3402005b;
+    grid-area: 2/3/3/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+     
+}
+.eduitem5 h1{
+ font-size: 80px;
+ font-family: 'Britney', cursive;
+ color: white;
+ 
+}
+
+
+.skills{
+    height: 90vh;
+    margin-top: 12vh;
+}
+.skheading{
     color: white;
-    border: #b16a7d solid 2px;
-    margin: 10px 50px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Britney', cursive;
 }
-.about .cards .mycards3 img{
-    width: 200px;
-    margin: 10px 0 5px;
+.myskill{
+    height: 80vh;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
 }
-.about .cards .mycards3 h1{
+.skillbox{
+    height: 60vh;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.skillvalues{
+    background-color: #753533a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    margin: 0 50px;
-    border: #f73a6c solid 3px;
-    padding: 0 15px
+    
 }
-.card-img3{
-    border: #b16a7d solid 3px;
-    margin: 15px 50px;
+.skillvaluesx{
+    background-color: #340200;
+    display: flex;
+    
+    
+    justify-content: left;
+    align-items: center;
 }
-.card-content3{
+.skillvalue1{
+    grid-area: 1/1/2/2;
+}
+.skillbar1{
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    margin-left: 10px;
+    height: 10px;
+    width: 70%;
+   box-shadow: 0 0 10px #3a0609, 0 0 20px #b92e358b, 0 0 30px #b92e3583;
+}
+.skillbar5{
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    margin-left: 10px;
+    height: 10px;
+    width: 450px;
+    box-shadow: 0 0 10px #3a0609, 0 0 20px #b92e358b, 0 0 30px #b92e3583;
+    
+}
+.skillbar2{
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    margin-left: 10px;
+    height: 10px;
+    width: 350px;
+    box-shadow: 0 0 10px #3a0609, 0 0 20px #b92e358b, 0 0 30px #b92e3583;
+}
+.skillbar3{
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    margin-left: 10px;
+    height: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px #3a0609, 0 0 20px #b92e358b, 0 0 30px #b92e3583;
+}
+.skillbar4{
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    margin-left: 10px;
+    height: 10px;
+    width: 100px;
+    box-shadow: 0 0 10px #3a0609, 0 0 20px #b92e358b, 0 0 30px #b92e3583;
+}
+
+.projects{
+    height: 90vh;
+    margin-top: 12vh;
+}
+.projheading{
     color: white;
-    border: #b16a7d solid 2px;
-    margin: 10px 50px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Britney', cursive;
 }
+.projcont{
+    display: flex;
+    justify-content: space-evenly;
+}
+.projcont a{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #340200;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj1{
+    margin: 5px;
+    padding: 10px;
+    text-align: justify;
+}
+.proj1 h3{
+    text-align: center;
+}
+.proj2{
+    margin: 5px;
+    padding: 10px;
+    text-align: justify;
+}
+.proj2 h3{
+    text-align: center;
+}
+
+
+
+
+
+.footer {
+    height: 70vh;
+    z-index: 2;
+    overflow: hidden;
+  }
+  
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .footercont {
+    height: 50vh;
+    background-color: #340200;
+    padding: 0px;
+  }
+  .fcnts {
+    background-color: yellow;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+  }
+  .ftitems {
+    background-color: #340200;
+  }
+  
+  .ftitem1 {
+    grid-area: 1/1/2/2;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .ftlogo {
+    margin-left: 5px;
+    animation: pulse 3s ease-in-out infinite;
+  }
+  .ftname h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    font-family: 'Britney', cursive;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .ftitem2 {
+    padding-left: 15px;
+    grid-area: 2/1/3/2;
+    display: flex;
+    justify-content: flex-start;
+    gap: 68px;
+  }
+  
+  .ftgitlogo {
+    margin-top: 5px;
+    text-decoration: none;
+  }
+  
+  .ftgitlogo i {
+    color: #904d5f;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: #340200;
+    border-radius: 50%;
+    padding: 5px;
+    transition: all 0.2s ease;
+  }
+  
+  .ftgitlogo i:hover {
+    text-decoration: none;
+    background-color: rgb(84, 44, 46);
+    color: #c6150f;
+  }
+  
+  .ftitem3 {
+    grid-area: 1/3/2/4;
+    display: flex;
+    align-items: center;
+  }
+  .ftcnt h1 {
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'Britney', cursive;
+    color: white;
+  }
+  
+  .ftitem4 {
+    grid-area: 2/3/3/4;
+    display: flex;
+  }
+  .ftitem4 h1 {
+    height: fit-content;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Cabinet Grotesk", sans-serif;
+    color: rgba(255, 255, 255, 0.459);
+  
+    border-radius: 50px;
+    padding: 7px;
+  }
+  
+  .ftitem5 {
+    grid-area: 1/2/3/3;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .divider {
+    margin-left: 15px;
+    background-color: #e6cdce;
+    height: 35vh;
+    width: 15px;
+    border-radius: 100px;
+    /* box-shadow: 0 0 10px #b92e35, 0 0 20px #b92e358b, 0 0 30px #b92e3583; */
+  }
+  
+  .statement {
+    font-family: 'Britney', cursive;
+    height: 10vh;
+    background-color: #9d1036;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .statement h1 {
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+  }
+  
